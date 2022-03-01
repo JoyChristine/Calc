@@ -65,21 +65,33 @@
 //  alert(scalene(l1,l2,l3));
 
 
-var a = parseInt(prompt("Enter a number1: "));
-var b = parseInt(prompt("Enter a number2: "));
-var c = parseInt(prompt("Enter a number3: "));
+let a = parseInt(prompt("Enter a number1: "));
+let b = parseInt(prompt("Enter a number2: "));
+let c = parseInt(prompt("Enter a number3: "));
 function getTriangleType(a,b,c) {
     if(a === b && b === c){
-        alert ("equi");
+        alert("equilateral");
     }
-    if (a === b && b!=c && a!=c) {
+    if(a === b && b!=c ) {
         alert("isosceles");
     }
-    if (a!=b && b!= c && a!=c){
+    if (a!=b && b!= c ); {
         alert("scalene");
     }
+    
 };
- alert(getTriangleType(a,b,c));
+ getTriangleType(a,b,c);
+
+
+
+
+
+
+
+
+
+
+
 // function getTriangleType(a,b,c) {
 // 	return (a === b && b === c) && 'equilateral' ||
 // 		(a === b || a === c || b === c) && 'isosceles' ||
